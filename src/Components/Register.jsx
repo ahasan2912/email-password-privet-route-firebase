@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Register = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, signOutUser } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleSignUpBtn = event => {
@@ -19,6 +19,8 @@ const Register = () => {
             console.log(result.user);
             event.target.reset();
             navigate('/login')
+            alert("Successfully Register")
+            signOutUser() //Register page defult vave signup korlei login hoi tai signout abar call kora hoyese
         })
         .catch((error) => {
            alert(error.message);
