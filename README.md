@@ -1,5 +1,5 @@
 # React + Vite + firebase
-# [Live site: ](https://remarkable-griffin-f8d88f.netlify.app/)
+# [Live site: ](https://venerable-lily-7399cc.netlify.app/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
